@@ -8,6 +8,28 @@ and current for the time being version of Docker (27.5.1, state: 02.02.2025).
 Problem is resolved in outdated version of python: 2.9.27 taken from official release repository:
 
 https://releases.ansible.com/ansible/
+    To proceed with the ansible-2.9.27.tar.gz package, you'll need to install Ansible from it. Here's a breakdown of the process:
+
+1. Prerequisites:
+
+    Python: Ansible requires Python. Ensure you have a compatible version installed (preferably Python 3). You can check with python3 --version.
+    pip: Python's package manager, pip, is needed. It usually comes with Python installations. Check with pip3 --version.
+    System Packages: Depending on your Linux distribution, you might need some system packages. For example, on Debian/Ubuntu systems, you might need build-essential and libssl-dev. Install them using your distribution's package manager (e.g., apt-get install build-essential libssl-dev).
+
+2. Extraction:
+
+    Open a terminal and navigate to the directory where you downloaded ansible-2.9.27.tar.gz.
+    Extract the archive using the command: tar -xzf ansible-2.9.27.tar.gz This will create a directory named ansible-2.9.27.
+
+3. Installation:
+
+    Navigate into the extracted directory: cd ansible-2.9.27
+    Inside this directory, you'll find Ansible's setup files.
+    Install Ansible using pip: pip3 install . (the "." indicates the current directory).
+
+4. Verification:
+
+    After the installation completes, verify it by checking the Ansible version: ansible --version You should see the installed version (2.9.27).
 
 https://docs.ansible.com/ansible-core/devel/reference_appendices/release_and_maintenance.html.
 
