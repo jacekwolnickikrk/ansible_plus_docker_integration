@@ -23,3 +23,7 @@ In order to check if Ansible works with Docker, prepare test directory, and insi
 Contents of Dockerfile and playbook in two seperate files. After execution of Ansible playbook, check if image is already created by typing a command "docker images"
 If ansible installed by pip, sometimes needed to update the path:
 export PATH=$PATH:/path/to/ansible/bin
+
+
+HOW TO UNINSTALL ANSIBLE:
+https://webhostinggeeks.com/howto/how-to-uninstall-ansible-on-ubuntu/
