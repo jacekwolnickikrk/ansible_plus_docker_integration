@@ -1,0 +1,18 @@
+---
+- hosts: localhost
+  connection: local
+  become: true  # <-- This is crucial
+  tasks:
+    - name: Build simple Docker image
+      docker_image:
+        name: test-image:latest
+        build:
+          path: .  # This is correct
+          dockerfile: Dockerfile
+        state: present
+
+    - name: Run simple Docker container
+      docker_container:
+        name: test-container
+        image: test-image:latest
+        state: started 
