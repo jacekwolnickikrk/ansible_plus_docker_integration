@@ -1,0 +1,23 @@
+Problem with Ansible and Docker integration. 
+Observed with Ansible 2.16.24, 2.17.7, 2.18.1.
+No sure, if that is a matter of Jenkins's Ansible plugin compatibility:
+https://plugins.jenkins.io/ansible/
+
+and current for the time being version of Docker (27.5.1, state: 02.02.2025).
+
+Problem is resolved in outdated version of python: 2.9.27 taken from official release repository:
+
+https://releases.ansible.com/ansible/
+
+https://docs.ansible.com/ansible-core/devel/reference_appendices/release_and_maintenance.html.
+
+Prerequisities: 
+Added ansible repository:
+https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html#control-node-requirements
+
+, installed pip3, and docker with pip3. 
+
+Wokirng on Ubuntu 22.04.
+
+In order to check if Ansible works with Docker, prepare test directory, and inside that directory create simple Dockerfile and ansible playbook poniting to this Dockerfile. 
+Contents of Dockerfile and playbook in two seperate files.
