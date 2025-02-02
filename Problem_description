@@ -20,4 +20,4 @@ https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.ht
 Wokirng on Ubuntu 22.04.
 
 In order to check if Ansible works with Docker, prepare test directory, and inside that directory create simple Dockerfile and ansible playbook poniting to this Dockerfile. 
-Contents of Dockerfile and playbook in two seperate files.
+Contents of Dockerfile and playbook in two seperate files. After execution of Ansible playbook, check if image is already created by typing a command "docker images"
